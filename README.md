@@ -4,8 +4,7 @@ Simple Python module to obtain the gender of a given name in spanish or english.
 - CSV Module
 ## Example
 ```python
-from PyGenderizr import *
-
-print(PyGenderizr("Juan"))
-}
+>>> from PyGenderizr import *
+>>> PyGenderizr("Juan")
+male
 ```
