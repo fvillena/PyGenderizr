@@ -17,7 +17,7 @@ def PyGenderizr(name):
                 if field == name:
                     return "female"
 
-    return "i"
+    return "undefined"
 
 if __name__ == "__main__":
     import sys
