@@ -1,7 +1,18 @@
 import csv
 
+def normalizeStr (str):
+    str = str.lower()
+    str = str.strip(" ")
+    str = str.replace("á", "a")
+    str = str.replace("é", "e")
+    str = str.replace("í", "i")
+    str = str.replace("ó", "o")
+    str = str.replace("ú", "u")
+    str = str.replace("ñ", "n")
+    return str
+
 def PyGenderizr(name):
-    name = name.lower()
+    name = normalizeStr(name)
 
     with open('maleNames.csv', 'rt') as f:
         reader = csv.reader(f, delimiter=',')
